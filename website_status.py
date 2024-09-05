@@ -22,7 +22,7 @@ def check_status(url :str) -> None:
         print(f'Error: {e}')
 
 def main() ->None:
-    url_to_check :str = input("Enter the URL: ")
+    url_to_check :str = input("Enter the URL to check: ")
     check_status(url_to_check)
 
 if __name__ == '__main__':
