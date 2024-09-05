@@ -6,16 +6,22 @@ morse_code_dict: dict[str, str] = {
     'Y': '-.--', 'Z': '--..',
     '1': '.----', '2': '..---', '3': '...--', '4': '....-', '5': '.....',
     '6': '-....', '7': '--...', '8': '---..', '9': '----.', '0': '-----',
-    ' ': '/'
+    ' ': '/', '?':'..--..','!':'-.-.--','@':'.--.-.','+':'.-.-.',";":'-.-.-.'
 }
 
 def convert_to_morse(text:str)-> str:
     return ''.join(morse_code_dict.get(char.upper(),'') for char in text)
 
 def main()->None:
-    user_input :str = input('Enter Text : ')
-    output_text :str = convert_to_morse(user_input)
-    print(f'Morse code for the text: \n{output_text}' )
+    while True:
+        user_input :str = input('Enter Text : ')
+        output_text :str = convert_to_morse(user_input)
+        print(f'Morse code for the text: {output_text}' )
+
+        restart :str = input("Want to execute again (y/n) :")
+        if restart.lower()!='y':
+            print("Good Bye!")
+            exit()
 
 if __name__ == '__main__':
     main()
