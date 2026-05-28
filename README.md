@@ -16,14 +16,6 @@ Converts one currency value into another using exchange-rate data from the proje
 
 ---
 
-### `demo_file.txt`
-Sample input file used to test or demonstrate the text analysis script.
-
-- Helps users quickly try `text_analyser.py` without creating their own text file first.
-- Useful for testing and demonstrations.
-
----
-
 ### `finance_calculator.py`
 Performs basic financial calculations such as interest or repayment-related computations.
 
@@ -45,14 +37,6 @@ Generates or manages passwords based on the script logic included in the file.
 
 - Useful for practicing randomness and validation techniques.
 - Demonstrates working with user input and secure password concepts.
-
----
-
-### `rates.json`
-Stores the exchange-rate data used by the currency converter.
-
-- Keeps exchange-rate information separate from the Python code.
-- Makes updates easier without modifying the script itself.
 
 ---
 
